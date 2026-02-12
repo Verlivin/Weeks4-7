@@ -23,14 +23,14 @@ public class Hammer : MonoBehaviour
 	}
 	void OnSpaceHolding()
 	{
-		Debug.Log("ooooo");
+		Debug.Log("ooooo"); //reset the hammer
 		Vector3 newRoatation = transform.eulerAngles;
 		newRoatation.z = 0;
 		transform.eulerAngles = newRoatation;
 	}
 	void OnSpaceReleased()
 	{
-		Debug.Log("aaaa");
+		Debug.Log("aaaa"); //hammer down!
 		Vector3 newRoatation = transform.eulerAngles;
 		newRoatation.z -= 60;
 		transform.eulerAngles = newRoatation;
