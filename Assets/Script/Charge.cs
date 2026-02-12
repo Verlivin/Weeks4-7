@@ -33,7 +33,7 @@ public class Charge : MonoBehaviour
 		}
 		if(raise == true)
 		{
-			score.value += 1000 * Time.deltaTime;
+			score.value += 1000 * Time.deltaTime; //1000 is the speed of raising, just feel no need of add another float for this
 			if (score.value >= slider.value)
 			{
 				raise = false;
